@@ -1,0 +1,58 @@
+#indexing
+my_list = [10,20,30,40,50,60,70]
+
+print(my_list[3])
+
+#negative indexing
+my_list = [10,20,30,40,50,60,70]
+
+print(my_list[-1])
+
+
+#slicing
+my_list = [10,20,30,40,50,60,70]
+
+print(my_list[1:3])
+
+my_list = [10,20,30,40,50,60,70]
+#reversing a list
+print(my_list[:-8:-1])
+
+
+
+#iterating a list
+my_list = [10,20,30,40,50,60,70,80,90,100]
+
+for x in range(len(my_list)):
+    print(my_list[x], end=" ")
+
+
+#append
+my_list = [10,20,30,40,50,60,70]
+
+list1 = 80
+my_list.append(list1)
+print(my_list)
+
+#insert
+my_list = [10,20,30,40,50,60,70]
+
+my_list.insert(3,1000)
+print(my_list)
+
+
+#extend
+my_list = [10,20,30,40,50,60,70]
+
+sublist = [9,99,999,9999]
+my_list.extend(sublist)
+print(my_list)
+
+
+#modify all items
+my_list = [10,20,30,40,50,60,70,80]
+for x in range(len(my_list)):
+    sqr = my_list[x] * my_list[x]
+    my_list[x] = sqr
+
+print(my_list)
